@@ -25,24 +25,28 @@ body{
     background-image:url(../img/patron.jpg) ;
     font-family: var(--texto);
     font-size: var(--tamano);
+    color: var(--WengeBrown);
+    line-height: 2em;
 }
 #receta{
-    margin: 5% 20%;
+    margin: 3% 10%;
     background-color: var(--blanco);
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
+    box-shadow: 0px 0px 101px 59px rgba(255,255,255,0.24)
 }
 img{
     border-radius: 20px;
     width: 100%;
 }
-h1{
+h1, h2{
     font-family: var(--titulos);
+    color: var(--nutmeg);
+    margin-bottom: 2%;
 }
 /* font-family: "Outfit", sans-serif; */
-h2{
-    color: var(--nutmeg);
-    font-family: var(--titulos);
+hr{
+    margin: 5% 0;
 }
 ol{
     counter-reset: lista;
@@ -56,6 +60,8 @@ ul,ol{
     background-color: var(--RoseWhite);
     padding: 20px;
     border-radius: 10px;
+    color: var(--negro);
+    margin: 3% 0;
 }
 #previo h3{
     color: var(--DarkRaspberry);
@@ -79,5 +85,28 @@ ul,ol{
     content: counter(lista) ".";
     counter-increment: lista;
     padding-right: 1%;
+}
+table{
+    width: 100%;
+    
+}
+.calo{
+    color: var(--nutmeg);
+    font-weight: bold;
+    padding-left: 1%;
+}
+.sombreado{
+    background-color: var(--RoseWhite);
+}
+@media (max-width:375px){
+    #receta{
+        margin: 0%;
+        border-radius: 0px;
+    }
+}
+@media (min-width:1440px){
+    #receta{
+        margin: 5% 20%;
+    }
 }
 
