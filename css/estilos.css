@@ -88,7 +88,6 @@ ul,ol{
 }
 table{
     width: 100%;
-    
 }
 .calo{
     color: var(--nutmeg);
@@ -98,13 +97,13 @@ table{
 .sombreado{
     background-color: var(--RoseWhite);
 }
-@media (max-width:375px){
+@media (max-width:480px){
     #receta{
         margin: 0%;
         border-radius: 0px;
     }
 }
-@media (min-width:1440px){
+@media (min-width:1000px){
     #receta{
         margin: 5% 20%;
     }
