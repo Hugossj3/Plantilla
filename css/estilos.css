@@ -6,11 +6,77 @@
     --DarkRaspberry: hsl(332, 51%, 32%);
 
     --blanco: hsl(0, 0%, 100%);
-    --RoseWhite: hsl(330, 100%, 98%);
+    --RoseWhite: hsl(331, 74%, 91%);
     --Eggshell: hsl(30, 54%, 90%);
     --LightGrey: hsl(30, 18%, 87%);
     --WengeBrown: hsl(30, 10%, 34%);
     --DarkCharcoal: hsl(24, 5%, 18%);
     --tamano: 16px;
+    --titulos:"Young Serif", serif;
+    --texto:"Outfit", sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(../img/patron.jpg) ;
+    font-family: var(--texto);
+    font-size: var(--tamano);
+}
+#receta{
+    margin: 5% 20%;
+    background-color: var(--blanco);
+    padding: 10px;
+    border-radius: 20px;
+}
+img{
+    border-radius: 20px;
+    width: 100%;
+}
+h1{
+    font-family: var(--titulos);
+}
+/* font-family: "Outfit", sans-serif; */
+h2{
+    color: var(--nutmeg);
+    font-family: var(--titulos);
+}
+ol{
+    counter-increment: lista;
+}
+ul,ol{
+    margin-left: 3%;
+    padding: 0;
+    list-style: none;
+}
+#previo{
+    background-color: var(--RoseWhite);
+    padding: 20px;
+    border-radius: 10px;
+}
+#previo h3{
+    color: var(--DarkRaspberry);
+}
+#especial li::before{
+    color: var(--DarkRaspberry);
+    content: "\2022";
+    padding-right: 1%;
+}
+.resalto{
+    color: var(--DarkCharcoal);
+    font-weight: bold;
+}
+#ingredientes li::before{
+    color: var(--nutmeg);
+    content: "\2022";
+    padding-right: 1%;
+}
+#instrucciones li::before{
+    color: var(--nutmeg);
+    content: counter(lista) ".";
+    padding-right: 1%;
 }
 
